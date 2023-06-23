@@ -148,8 +148,6 @@ address {
 .header-menu-item {
   font-weight: 500;
   line-height: 1.3;
-  display: flex;
-  gap: 40px;
 }
 .header-address {
   font-style: normal;
@@ -347,8 +345,6 @@ address {
   text-transform: uppercase;
   color: #f4f4fd;
   font-family: 'Raleway', sans-serif;
-  display: inline-block;
-  margin-bottom: 16px;
 }
 .footer-descript {
   font-weight: 400;
@@ -357,4 +353,6 @@ address {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
