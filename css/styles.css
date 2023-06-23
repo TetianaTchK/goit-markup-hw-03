@@ -146,11 +146,6 @@ button {
 .team-section {
   background-color: var(--logo-background-light);
 }
-/*portfolio*/
-.webstudio-concept {
-  background-color: var(--page-color);
-}
-
 /*Section*/
 .hero {
   padding-top: 188px;
@@ -296,10 +291,57 @@ button {
   color: #2e2f42;
   background-color: #ffffff;
 }
-.hero-portfolio {
+/*section portfolio*/
+.webstudio-concept {
   background: linear-gradient(0deg, #e7e9fc, #e7e9fc),
     linear-gradient(0deg, #ffffff, #ffffff);
   font-family: 'Roboto', sans-serif;
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.hero-portfolio-filter: {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.hero-portfolio-filter-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+.hero-portfolio-filter-btn: hover, 
+.hero-portfolio-filter-btn: focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.hero-portfolio-filter-btn-list: {
+  border: 1px solid transparent;
+  background-color: #404bbf;
+  color: var(--main-white-cl);
+}
+.portfolio-list-img: {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.portfolio-list-item: {
+  flex-basis: calc((100% - 24px * (3-1)) / 3);
+}
+.portfolio-title-list-content: {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .hero-title {
   font-weight: 700;
@@ -311,16 +353,6 @@ button {
   max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
-}
-.img-portf-list-link {
-}
-.hero-portfolio-title {
-}
-.hero-portfolio-filter {
-}
-.portfolio-list-img {
-}
-.portfolio-list-item-img {
 }
 .portfolio-title-list-img {
   font-weight: 500;
@@ -336,30 +368,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
-.hero-portfolio-filter-btn {
-}
-
-/*Button Portfolio*/
-.hero-portfolio-filter-btn {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
-  cursor: pointer;
-}
-.hero-portfolio-filter-btn:hover {
-  color: #ffffff;
-  background-color: #404bbf;
-}
-.hero-portfolio-filter-btn:focus {
-  color: #ffffff;
-  background-color: #404bbf;
 }
 /*Footer Index+Portfolio*/
 .footer {
