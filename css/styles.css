@@ -151,7 +151,7 @@ button {
   background-color: var(--page-color);
 }
 
-/*Section 3*/
+/*Section*/
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -187,7 +187,7 @@ button {
 .hero-button:focus {
   background-color: #404bbf;
 }
-/*Section 4*/
+/*Section 1*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -210,7 +210,7 @@ button {
   justify-content: space-between;
 }
 .benefits-list-items {
-  flex-basis: calc((100% - 24px * 3 - 1) / 3);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .benefits-names {
   font-weight: 500;
@@ -228,6 +228,9 @@ button {
   color: #434455;
 }
 /*Section*/
+.work-section {
+  padding-bottom: 120px;
+}
 .work-section-name {
   font-weight: 700;
   font-size: 36px;
@@ -238,13 +241,51 @@ button {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.work-section {
+.work-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.work-section-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
+  justify-content: space-between;
 }
-.work-list-item {
-  width: calc((100% - 72px) / 4);
+/*Section*/
+.team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f4f4fd;
+}
+.team-section-list: {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  --items: 4;
+}
+.team-section-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100% - 24px * (var(--items) - 1)) / var(--items));
+}
+.team-item-card: {
+  padding: 32px 16px;
+  text-align: center;
+}
+.team-section-person {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.team-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 .team-section-name {
   font-size: 36px;
@@ -254,27 +295,6 @@ button {
   text-transform: capitalize;
   color: #2e2f42;
   background-color: #ffffff;
-}
-.team-section {
-}
-.team-section-item {
-  background-color: #ffffff;
-}
-.team-section-person {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-.team-description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 .hero-portfolio {
   background: linear-gradient(0deg, #e7e9fc, #e7e9fc),
