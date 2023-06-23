@@ -339,18 +339,17 @@ address {
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
-  display: inline-block;
-  margin-bottom: 16px;
-}
+  }
 .footer-logo-two {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
   font-family: 'Raleway', sans-serif;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-descript {
   font-weight: 400;
