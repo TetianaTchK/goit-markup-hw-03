@@ -148,6 +148,8 @@ address {
 .header-menu-item {
   font-weight: 500;
   line-height: 1.3;
+  display: flex;
+  gap: 40px;
 }
 .header-address {
   font-style: normal;
