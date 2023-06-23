@@ -76,7 +76,8 @@ img {
 
 /*index*/
 .hero-section {
-  background-color: var(--hero-background);
+  background: #2e2f42;
+  padding: 188px 0;
 }
 .benefits-section {
   background-color: var(--page-color);
@@ -172,8 +173,10 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .benefits-description {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -192,9 +195,10 @@ img {
 .work-section {
   display: flex;
   gap: 24px;
+  padding-bottom: 120px;
 }
 .work-list-item {
-  width: calc((100% - 48px) / 3);
+  width: calc((100% - 72px) / 4);
 }
 .team-section-name {
   font-size: 36px;
@@ -237,7 +241,10 @@ img {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--main-white-cl);
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .img-portf-list-link {
 }
@@ -273,14 +280,17 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--main-white-cl);
+  background-color: var(--accent-cl);
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
 }
-.hero-button:hover {
-  background-color: #404bbf;
-}
+.hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
 }
