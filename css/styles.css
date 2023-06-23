@@ -56,6 +56,14 @@ button {
 address {
   font-style: normal;
 }
+.benefits-section-title {
+  margin-bottom: 72px;
+  color: var(--main-dark-cl);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
 .header-webstudio {
   height: 72px;
   display: flex;
@@ -109,6 +117,7 @@ address {
 }
 .work-section {
   background-color: var(--page-color);
+  padding-bottom: 120px;
 }
 .main-section {
   background-color: var(--page-color);
@@ -328,23 +337,18 @@ address {
   padding: 100px 0;
   padding-bottom: 100px;
 }
-.footer-logo {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  font-family: 'Raleway', sans-serif;
-}
+.footer-logo,
 .footer-logo-two {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
-  font-family: 'Raleway', sans-serif;
+}
+.footer-logo {
+  color: var(--accent-cl);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-descript {
   font-weight: 400;
@@ -353,6 +357,4 @@ address {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  display: inline-block;
-  margin-bottom: 16px;
 }
