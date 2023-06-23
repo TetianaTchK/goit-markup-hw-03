@@ -124,8 +124,6 @@ address {
 .header-webstudio {
   background-color: var(--page-color);
 }
-
-}
 .header-logo {
   font-weight: 800;
   font-size: 18px;
@@ -133,7 +131,6 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-cl);
-  margin-right: 76px;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
 }
@@ -145,7 +142,7 @@ address {
   color: #2e2f42;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-   margin-right: 76px;
+  margin-right: 76px;
 }
 
 .header-menu-item {
@@ -339,7 +336,7 @@ address {
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
-  }
+}
 .footer-logo-two {
   font-weight: 800;
   font-size: 18px;
@@ -359,5 +356,3 @@ address {
   color: #f4f4fd;
   max-width: 264px;
 }
-
-
