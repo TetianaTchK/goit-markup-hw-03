@@ -9,15 +9,11 @@ body {
   background-color: var(--main-white-cl);
   font-family: var(--primary-font);
   font-size: 16px;
-  font-weight: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px;
 }
 /*Reset*/
 h1,
@@ -30,16 +26,12 @@ p {
   margin: 0;
 }
 ul,
-ol,
-.list {
+ol {
   margin: 0;
   padding-left: 0;
   list-style-type: none;
 }
-a,
-.link {
-  color: currentColor;
-  font-style: normal;
+a {
   text-decoration: none;
 }
 img {
@@ -47,14 +39,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.link {
+  text-decoration: none;
+}
 .header-webstudio {
+  height: 72px;
+  display: flex;
   border-bottom: 1px solid #e7e9fc;
-  background-color: var(--page-color);
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 .header-webstudio-navigation {
   display: flex;
@@ -76,12 +76,9 @@ img {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #2e2f42;
-  font-family: 'Raleway', sans-serif;
+  color: var(--main-dark-cl);
+  font-family: 'Raleway';
   text-transform: uppercase;
-}
-.header .link {
-  padding: 24px 0;
 }
 .header-menu-list {
   font-weight: 500;
@@ -93,7 +90,9 @@ img {
   padding: 24px 0;
   display: flex;
   gap: 40px;
-  align-items: center;
+}
+.list {
+  list-style: none;
 }
 .header-menu:hover,
 .header-menu:focus {
@@ -102,23 +101,25 @@ img {
 .header-menu-item {
   font-weight: 500;
   line-height: 1.3;
-  flex-basis: calc((100% - 72px) / 4);
 }
 .header-address-item: hover,
 .header-address-item: focus {
   color: #404bbf;
 }
 .header-address {
+  display: flex;
+  gap: 40px;
+}
+.header-address:hover,
+.header-address:focus {
+  color: #404bbf;
+}
+.header-address-link {
   letter-spacing: 0.02em;
   font-weight: 400;
   line-height: 1.5;
   color: var(--main-dark-cl);
   text-decoration: none;
-  font-style: normal;
-}
-.header-address:hover,
-.header-address:focus {
-  color: #404bbf;
 }
 .benefits-section-title {
   margin-bottom: 72px;
