@@ -246,24 +246,22 @@ button {
 }
 /*Section*/
 .team-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: #f4f4fd;
+  background: #f4f4fd;
+  padding: 120px 0;
 }
 .team-section-list: {
   display: flex;
   gap: 24px;
-  justify-content: space-between;
-  --items: 4;
 }
 .team-section-item {
-  background-color: #ffffff;
+  background-color: var(--main-white-cl);
+  width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 24px * (var(--items) - 1)) / var(--items));
 }
 .team-item-card: {
   padding: 32px 16px;
-  text-align: center;
 }
 .team-section-person {
   font-weight: 500;
@@ -283,13 +281,14 @@ button {
   color: #434455;
 }
 .team-section-name {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  background-color: #ffffff;
+  margin-bottom: 72px;
 }
 /*section portfolio*/
 .webstudio-concept {
