@@ -286,9 +286,6 @@ button {
 }
 /*section portfolio*/
 .webstudio-concept {
-  background: linear-gradient(0deg, #e7e9fc, #e7e9fc),
-    linear-gradient(0deg, #ffffff, #ffffff);
-  font-family: 'Roboto', sans-serif;
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -300,14 +297,13 @@ button {
 }
 .hero-portfolio-filter-btn {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  background-color: #f4f4fd;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
-
   text-align: center;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
+  color: var(--accent-cl);
   cursor: pointer;
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
@@ -315,26 +311,39 @@ button {
 }
 .hero-portfolio-filter-btn: hover, 
 .hero-portfolio-filter-btn: focus {
-  color: #ffffff;
-  background-color: #404bbf;
-}
-.hero-portfolio-filter-btn-list {
-  border: 1px solid transparent;
   background-color: #404bbf;
   color: var(--main-white-cl);
+  border: 1px solid transparent;
 }
 .portfolio-list-img {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
-.portfolio-list-item {
-  flex-basis: calc((100% - 24px * (3-1)) / 3);
+.img-portf-list-link {
+  width: calc((100% - 48px) / 3);
 }
-.portfolio-title-list-content {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
+.portfolio-title-list-img {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+
+  .portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .cards {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+  }
 }
 .hero-title {
   font-weight: 700;
@@ -346,21 +355,6 @@ button {
   max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
-}
-.portfolio-title-list-img {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-.portfolio-list-descript {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
 }
 /*Footer Index+Portfolio*/
 .footer {
