@@ -140,6 +140,10 @@ button {
   display: flex;
   gap: 40px;
 }
+.number .link:hover,
+.number .link:focus {
+  color: #404bbf;
+}
 .benefits-section-title {
   margin-bottom: 72px;
   color: var(--main-dark-cl);
@@ -296,13 +300,13 @@ button {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.hero-portfolio-filter {
+.filters {
   display: flex;
   gap: 24px;
   justify-content: center;
   margin-bottom: 72px;
 }
-.hero-portfolio-filter-btn {
+.btn {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4fd;
   font-size: 16px;
@@ -316,8 +320,8 @@ button {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
-.hero-portfolio-filter-btn: hover, 
-.hero-portfolio-filter-btn: focus {
+.btn:hover,
+.btn:focus {
   background-color: #404bbf;
   color: var(--main-white-cl);
   border: 1px solid transparent;
@@ -328,7 +332,7 @@ button {
   column-gap: 24px;
   row-gap: 48px;
 }
-.img-portf-list-link {
+.portfolio-item {
   width: calc((100% - 48px) / 3);
 }
 .portfolio-title-list-img {
@@ -350,17 +354,6 @@ button {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-}
-.hero-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--main-white-cl);
-  max-width: 496px;
-  margin: 0 auto;
-  margin-bottom: 48px;
 }
 /*Footer Index+Portfolio*/
 .footer {
