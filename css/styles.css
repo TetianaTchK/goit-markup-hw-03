@@ -47,16 +47,26 @@ button {
 .link {
   text-decoration: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-webstudio {
   height: 72px;
   display: flex;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
-  display: flex;
-  align-items: center;
-}
-.header-webstudio-navigation {
   display: flex;
   align-items: center;
 }
@@ -80,46 +90,55 @@ button {
   font-family: 'Raleway';
   text-transform: uppercase;
 }
-.header-menu-list {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-decoration: none;
-  padding: 24px 0;
+.header-webstudio-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-menu {
   display: flex;
   gap: 40px;
 }
 .list {
   list-style: none;
 }
-.header-menu:hover,
-.header-menu:focus {
-  color: #404bbf;
-}
 .header-menu-item {
   font-weight: 500;
   line-height: 1.3;
 }
-.header-address-item: hover,
-.header-address-item: focus {
+.header-menu-link {
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+  padding: 24px 0;
+}
+.header-menu-item.link:hover,
+.header-menu-item.link:focus {
   color: #404bbf;
+}
+.list {
+  list-style: none;
 }
 .header-address {
-  display: flex;
-  gap: 40px;
+  font-style: normal;
+  margin-left: auto;
 }
-.header-address:hover,
-.header-address:focus {
+.mail .link:hover,
+.mail .link:focus {
   color: #404bbf;
 }
-.header-address-link {
+.address-link {
   letter-spacing: 0.02em;
   font-weight: 400;
   line-height: 1.5;
   color: var(--main-dark-cl);
   text-decoration: none;
+}
+.header-address-list {
+  display: flex;
+  gap: 40px;
 }
 .benefits-section-title {
   margin-bottom: 72px;
@@ -178,18 +197,6 @@ button {
   background-color: #404bbf;
 }
 /*Section 1*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .benefits-section {
   padding-top: 120px;
   padding-bottom: 120px;
